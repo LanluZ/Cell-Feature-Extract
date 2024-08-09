@@ -38,7 +38,6 @@ def main():
         write.writeheader()
 
         # 遍历图片文件
-        i = 0
         for filename in file_arr:
             data_dic = dict()  # 数据记录
             img = cv2.imread(os.path.join(current_path, 'Data', dirname, filename), cv2.IMREAD_UNCHANGED)
